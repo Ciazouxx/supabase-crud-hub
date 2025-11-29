@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Users, MapPin, Bell, Filter, Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroBg from "@/assets/hero-bg.png";
 
 const Index = () => {
   const features = [
@@ -68,15 +67,7 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section 
-        className="relative container mx-auto px-4 pt-32 pb-20 text-center overflow-hidden"
-        style={{
-          backgroundImage: `linear-gradient(rgba(34, 24, 49, 0.85), rgba(34, 24, 49, 0.85)), url(${heroBg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-        }}
-      >
+      <section className="container mx-auto px-4 pt-32 pb-20 text-center">
         <div className="inline-block px-4 py-2 bg-primary/10 rounded-full border border-primary/20 mb-6">
           <span className="text-sm font-medium text-primary">Powered by Community</span>
         </div>
